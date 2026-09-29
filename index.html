@@ -1,0 +1,464 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Sona ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Georgia, "Times New Roman", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow-x: hidden;
+
+            background:
+                radial-gradient(circle at top, #ffb6c9, transparent 40%),
+                linear-gradient(135deg, #2b0715, #5c0b2b, #25030f);
+
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            padding: 60px 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .small {
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: #ffd6e2;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 100px);
+            font-family: "Brush Script MT", cursive;
+            color: #fff;
+            line-height: 1;
+            text-shadow: 0 0 25px rgba(255, 100, 150, 0.8);
+        }
+
+        h1 span {
+            display: block;
+            color: #ff719d;
+        }
+
+        .date {
+            margin-top: 30px;
+            font-size: 22px;
+            color: #ffd6e2;
+        }
+
+        .message {
+            margin: 40px auto;
+            max-width: 700px;
+            font-size: 19px;
+            line-height: 2;
+            color: #ffe8ef;
+        }
+
+        .love-letter {
+            margin: 35px auto;
+            padding: 35px;
+            max-width: 700px;
+
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+
+            backdrop-filter: blur(10px);
+
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .love-letter p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .signature {
+            color: #ff8eae;
+            font-size: 25px !important;
+            font-family: cursive;
+        }
+
+        button {
+            border: none;
+            padding: 16px 35px;
+            border-radius: 50px;
+
+            background: linear-gradient(
+                135deg,
+                #ff477e,
+                #e91e63
+            );
+
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+
+            box-shadow:
+                0 10px 30px rgba(233, 30, 99, 0.4);
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            box-shadow:
+                0 15px 40px rgba(255, 71, 126, 0.6);
+        }
+
+        #surprise {
+            display: none;
+            margin-top: 40px;
+            animation: appear 1.5s ease;
+        }
+
+        #surprise h2 {
+            font-family: cursive;
+            color: #ff719d;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        #surprise p {
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        .forever {
+            margin-top: 25px;
+            font-size: 28px;
+            color: #ff9fba;
+            font-family: cursive;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 25px;
+            animation: float 7s linear forwards;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .heart-big {
+            font-size: 70px;
+            margin-bottom: 20px;
+            animation: beat 1.2s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #dbaabb;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="heart-big">
+            ❤️
+        </div>
+
+        <div class="small">
+            A SPECIAL MESSAGE FOR A SPECIAL GIRL
+        </div>
+
+        <h1>
+            Happy Birthday
+            <span>Sona ❤️</span>
+        </h1>
+
+        <div class="date">
+            September 30 🎂
+        </div>
+
+
+        <div class="message">
+
+            Today is not just another day.
+
+            <br>
+
+            Today is the day the most beautiful soul
+            entered this world.
+
+            <br><br>
+
+            And I feel incredibly lucky that
+            somehow, our paths crossed. ❤️
+
+        </div>
+
+
+        <div class="love-letter">
+
+            <p>
+                My Dearest Sona,
+            </p>
+
+            <p>
+                Happy Birthday to the most beautiful girl
+                who has brought so much happiness into my life.
+                ❤️
+            </p>
+
+            <p>
+                I wish I could put into words exactly how much
+                you mean to me, but somehow words never seem
+                enough when it comes to you.
+            </p>
+
+            <p>
+                Your smile makes my worst days better.
+                Your presence makes ordinary moments special.
+                And simply knowing that you are a part of my life
+                makes me smile.
+            </p>
+
+            <p>
+                On your birthday, I wish you a life full of
+                happiness, success, beautiful moments and
+                everything your heart desires.
+            </p>
+
+            <p>
+                I hope every dream you have slowly becomes
+                a beautiful reality.
+            </p>
+
+            <p>
+                And most importantly, I hope you never forget
+                how incredibly special you are.
+            </p>
+
+            <p>
+                Thank you for being you.
+            </p>
+
+            <p>
+                Thank you for being the beautiful person
+                that you are.
+            </p>
+
+            <p>
+                And thank you for giving me so many reasons
+                to smile.
+            </p>
+
+            <p class="signature">
+                With all my love,<br>
+                Always yours ❤️
+            </p>
+
+        </div>
+
+
+        <button onclick="showSurprise()">
+            💌 One More Thing...
+        </button>
+
+
+        <div id="surprise">
+
+            <h2>
+                Sona, You Are My Favorite Person ❤️
+            </h2>
+
+            <p>
+                If I could give you one gift beyond anything
+                money could buy...
+            </p>
+
+            <p>
+                I would give you the ability to see yourself
+                through my eyes.
+            </p>
+
+            <p>
+                Because then you would finally understand
+                just how beautiful, precious and special
+                you truly are to me.
+            </p>
+
+            <p>
+                I hope this birthday brings you a smile,
+                because your smile is one of my favorite
+                things in this world.
+            </p>
+
+            <div class="forever">
+                I LOVE YOU, SONA ❤️
+                <br>
+                YOU + ME = FOREVER ♾️
+            </div>
+
+        </div>
+
+
+        <footer>
+            Made with ❤️ especially for Sona
+            <br>
+            September 30 🎂
+        </footer>
+
+    </div>
+
+
+    <script>
+
+        function showSurprise() {
+
+            document.getElementById("surprise").style.display = "block";
+
+            createHeartExplosion();
+
+            document.getElementById("surprise")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+        }
+
+
+        function createHeart() {
+
+            const heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            const hearts = [
+                "❤️",
+                "💕",
+                "💗",
+                "💖",
+                "💘",
+                "💝"
+            ];
+
+            heart.innerHTML =
+                hearts[
+                    Math.floor(
+                        Math.random() * hearts.length
+                    )
+                ];
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.fontSize =
+                (15 + Math.random() * 25) + "px";
+
+            heart.style.animationDuration =
+                (5 + Math.random() * 5) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 10000);
+        }
+
+
+        function createHeartExplosion() {
+
+            for (let i = 0; i < 35; i++) {
+
+                setTimeout(() => {
+
+                    const heart =
+                        document.createElement("div");
+
+                    heart.className = "heart";
+
+                    heart.innerHTML = "❤️";
+
+                    heart.style.left =
+                        (40 + Math.random() * 20) + "vw";
+
+                    heart.style.bottom = "40vh";
+
+                    heart.style.fontSize =
+                        (20 + Math.random() * 30) + "px";
+
+                    heart.style.animationDuration =
+                        (2 + Math.random() * 2) + "s";
+
+                    document.body.appendChild(heart);
+
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 5000);
+
+                }, i * 60);
+            }
+        }
+
+
+        // Create floating hearts continuously
+
+        setInterval(createHeart, 700);
+
+    </script>
+
+</body>
+
+</html>
+```
